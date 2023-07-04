@@ -1,0 +1,126 @@
+.cardOffer-link-to-offerDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-top: 14px;
+}
+
+.cardOffer-Info {
+  display: flex;
+  border: 0.7px solid #e3e4e5;
+  width: 900px;
+  background-color: #fcfcfc;
+}
+
+.cardOffer-Info-tabla-name {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 21px;
+}
+
+.cardOffer-Info-AnnualSalary {
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.cardOffer-Info-img {
+  height: 115px;
+  width: 115px;
+  object-fit: cover;
+  border-radius: 7px;
+  padding: 0 0 16px;
+}
+
+.cardOffer-Info-img:hover {
+  cursor: pointer;
+}
+.cardOffer-paragraph {
+  margin: 1rem;
+}
+
+.cardOffer-Info-img-ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardOffer-Info-Ubicado {
+  font-size: 14px;
+  margin-top: 3px;
+  color: #25d366;
+  font-weight: 900;
+}
+
+.cardOffer-Info-technologies {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.cardOffer-BtnToggle {
+  display: flex;
+  justify-content: flex-end;
+  border: transparent;
+}
+
+.cardOffer-Profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-around;
+  gap: 7px;
+  width: 390px;
+}
+
+.cardOffer-Info-Experiencia {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+}
+.cardOffer-Info-OfferState {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  /* margin-left: 300px; */
+}
+.cardOffer-Info-JobType {
+  display: flex;
+  /* flex-direction: column;
+  justify-content:end;
+  align-items:end; */
+}
+
+.cardOffer-Info-UbiJob {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.cardOffer-Info-Description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.cardOffer-Info-State-Type-JobType {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: right;
+  width: 230px;
+  margin-right: 18px;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 991px) {
+  .cardOffer-Info {
+    display: flex;
+    border: 0.7px solid #e3e4e5;
+    width: 320px;
+    background-color: #fcfcfc;
+  }
+}

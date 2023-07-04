@@ -1,0 +1,14 @@
+@media only screen and (max-width: 880px) {
+
+    .btn_profile_general-create-my-experience{
+        /* margin-top: 300px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 320px;
+
+    }
+  
+  }
+
