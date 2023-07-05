@@ -133,7 +133,7 @@ const Offers = () => {
                         </div>
                     </section>
                     <NavLink
-                        to="/createOffer"
+                        to="/createOffer2"
                     >
                         <button className="offer-button-Create">
                             Crear Oferta

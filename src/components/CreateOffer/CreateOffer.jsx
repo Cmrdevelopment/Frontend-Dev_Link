@@ -91,7 +91,7 @@ const CreateOffer = () => {
               {...register('offerTitle', { required: true })}
               placeholder="Offer Title"
             />
-            {errors.offerTitle && <p className="error-message">This field is required</p>}
+            {errors.offerTitle && <p className="error-message">Este campo es obligatorio</p>}
           </div>
 
           <div className="form-field">
@@ -107,7 +107,7 @@ const CreateOffer = () => {
                 </option>
               ))}
             </select>
-            {errors.offerType && <p className="error-message">This field is required</p>}
+            {errors.offerType && <p className="error-message">Este campo es obligatorio</p>}
           </div>
 
           <div className="form-field-one">
@@ -123,7 +123,7 @@ const CreateOffer = () => {
                 </option>
               ))}
             </select>
-            {errors.jobType && <p className="error-message">This field is required</p>}
+            {errors.jobType && <p className="error-message">Este campo es obligatorio</p>}
           </div>
 
           <div className="form-field-two">
@@ -153,7 +153,7 @@ const CreateOffer = () => {
               ))}
             </div>
             {errors.technologies && (
-              <p className="error-message">This field is required</p>
+              <p className="error-message">Este campo es obligatorio</p>
             )}
           </div>
 
@@ -166,7 +166,7 @@ const CreateOffer = () => {
               {...register('descriptionGeneral', { required: true })}
             ></textarea>
             {errors.description && (
-              <p className="error-message">This field is required</p>
+              <p className="error-message">Este campo es obligatorio</p>
             )}
           </div>
 
@@ -179,7 +179,7 @@ const CreateOffer = () => {
               {...register('descriptionResponsabilities', { required: true })}
             ></textarea>
             {errors.description && (
-              <p className="error-message">This field is required</p>
+              <p className="error-message">Este campo es obligatorio</p>
             )}
           </div>
 
@@ -192,7 +192,7 @@ const CreateOffer = () => {
               {...register('descriptionRequires', { required: true })}
             ></textarea>
             {errors.description && (
-              <p className="error-message">This field is required</p>
+              <p className="error-message">Este campo es obligatorio</p>
             )}
           </div>
 
@@ -205,7 +205,7 @@ const CreateOffer = () => {
               {...register('descriptionSalary', { required: true })}
             ></textarea>
             {errors.description && (
-              <p className="error-message">This field is required</p>
+              <p className="error-message">Este campo es obligatorio</p>
             )}
           </div>
 
@@ -220,7 +220,7 @@ const CreateOffer = () => {
               {...register('experienceYears', { required: false })}
             />
             {errors.annualSalary && (
-              <p className="error-message">This field is required</p>
+              <p className="error-message">Este campo es obligatorio</p>
             )}
           </div>
 
@@ -235,7 +235,7 @@ const CreateOffer = () => {
               {...register('annualSalary', { required: true })}
             />
             {errors.annualSalary && (
-              <p className="error-message">This field is required</p>
+              <p className="error-message">Este campo es obligatorio</p>
             )}
           </div>
 
@@ -247,7 +247,7 @@ const CreateOffer = () => {
               className="input-create-offer"
               {...register('city', { required: true })}
             />
-            {errors.city && <p className="error-message">This field is required</p>}
+            {errors.city && <p className="error-message">Este campo es obligatorio</p>}
           </div>
 
           <div className="form-field-four">
