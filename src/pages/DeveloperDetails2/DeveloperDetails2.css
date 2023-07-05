@@ -106,7 +106,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 22ch;
+  max-width: 20ch;
 }
 
 /* .developerDetails2-offer-rating-writeRating-container { */
