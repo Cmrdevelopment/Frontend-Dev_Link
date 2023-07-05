@@ -32,7 +32,7 @@ export const Home = () => {
               </NavLink>
               <NavLink to="/offers">
                 <button className="home-learnMore">
-                  <p style={{ margin: 0 }}>Learn more</p>
+                  <p style={{ margin: 0 }}>Ofertas</p>
                 </button>
               </NavLink>
             </div>
