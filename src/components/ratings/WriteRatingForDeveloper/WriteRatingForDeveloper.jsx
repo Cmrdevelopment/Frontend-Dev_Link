@@ -9,13 +9,12 @@ const WriteRatingForDeveloper = ({ userToRate }) => {
     const { user } = useAuth()
     const [ratingValue, setRatingValue] = useState(-1);
     const [userRatingsFromDB, setUserRatingsFromDB] = useState({});
+    const [ratingValueFirstTime, setRatingValueFirstTime] = useState(-1);
     const [userRatingsFromDBFirstTime, setUserRatingsFromDBFirstTime] = useState({});
     const [responseCreateRating, setResponseCreateRating] = useState({})
     const [responseUpdateRating, setReponsesUpdateRating] = useState({})
 
     const userLoged = user
-
-    // console.log("WriteRatingForDeveloper -> userLoged: ", userLoged)
 
     // If userLogged === null means that we're not logged
     if (userLoged === null) return null
@@ -23,18 +22,8 @@ const WriteRatingForDeveloper = ({ userToRate }) => {
     // If the user to rate is the user loged, we just leave
     if (userToRate._id === userLoged._id) return null;
 
-    // const getUserRatingsFromDB = async () => {
-    //     setUserRatingsFromDB(await getByReference("User", userToRate._id))
-    // }
-
-    // const getUserRatingsFromDBFirstTime = async () => {
-    //     setUserRatingsFromDBFirstTime(await getByReference("User", userToRate._id))
-    // }
-
     const getUserRatingsFromDB = async () => {
         const dataFromDB = await getByReference("User", userToRate._id)
-
-        console.log("getUserRatingsFromDB -> dataFromDB: ", dataFromDB)
 
         if (dataFromDB.status == 200) {
             setUserRatingsFromDB(dataFromDB)
@@ -59,11 +48,9 @@ const WriteRatingForDeveloper = ({ userToRate }) => {
     }
 
     const createOrUpdateRating = async (userRatingsFromDB) => {
-        console.log("createOrUpdateRating -> userRatingsFromDB: ", userRatingsFromDB)
-
         if (userRatingsFromDB?.data) {
-            // const filterRating = userRatingsFromDB.data.filter((rating) => rating.owner == userLoged._id);
-            const filterRating = userRatingsFromDB.data.filter((rating) => rating.owner._id == userLoged._id);
+            const filterRating = userRatingsFromDB.data.filter((rating) => rating.owner == userLoged._id);
+            //const filterRating = userRatingsFromDB.data.filter((rating) => rating.owner._id == userLoged._id);
 
             if (filterRating.length == 0) {
                 setResponseCreateRating(await createRating({ "score": ratingValue, "referenceDeveloper": userToRate._id }));
@@ -76,23 +63,15 @@ const WriteRatingForDeveloper = ({ userToRate }) => {
     };
 
     const showFirstTimeRating = async (userRatingsFromDB) => {
-        console.log("showFirstTimeRating -> userRatingsFromDB: ", userRatingsFromDB)
         if (userRatingsFromDB?.data) {
-            console.log("showFirstTimeRating -> userRatingsFromDB.data: ", userRatingsFromDB.data)
-            const filterRating = userRatingsFromDB.data
-                // .filter((rating) => rating.referenceDeveloper._id == userToRate._id);
-                .filter((rating) => {
-                    console.log("showFirstTimeRating -> rating.referenceDeveloper: ", rating.referenceDeveloper)
-                    return rating.referenceDeveloper == userToRate._id
-                })
+            //const filterRating = userRatingsFromDB.data.filter((rating) => rating.owner._id == userLoged._id);
+            const filterRating = userRatingsFromDB.data.filter((rating) => rating.owner == userLoged._id);
 
             if (filterRating.length == 0) {
-                console.log("showFirstTimeRating -> filterRating.length == 0: ", filterRating.length)
-                setRatingValue(-1)
+                setRatingValueFirstTime(-1)
                 setUserRatingsFromDBFirstTime({});
             } else {
-                console.log("showFirstTimeRating -> filterRating.length != 0: ", filterRating.length)
-                setRatingValue(filterRating[0].score)
+                setRatingValueFirstTime(filterRating[0].score)
                 setUserRatingsFromDBFirstTime({});
             }
         }
@@ -105,11 +84,10 @@ const WriteRatingForDeveloper = ({ userToRate }) => {
     }, [ratingValue]);
 
 
-    ///////////////////////////
     useEffect(() => {
         getUserRatingsFromDBFirstTime()
     }, []);
-    //////////////////////////////
+
 
     useEffect(() => {
         console.log("response create Rating: ", responseCreateRating)
@@ -123,20 +101,15 @@ const WriteRatingForDeveloper = ({ userToRate }) => {
         createOrUpdateRating(userRatingsFromDB);
     }, [userRatingsFromDB]);
 
-    ////////////////////////////////
     useEffect(() => {
         showFirstTimeRating(userRatingsFromDBFirstTime)
-        //console.log("Rating first time")
     }, [userRatingsFromDBFirstTime]);
-    ////////////////////////////////
-
-
 
     return (
         <div>
             <Rating
                 name="Write Ratings For Developer"
-                value={ratingValue}
+                value={ratingValue === -1 ? ratingValueFirstTime : ratingValue}
                 onChange={(event, newRatingValue) => {
                     setRatingValue(newRatingValue);
                 }}

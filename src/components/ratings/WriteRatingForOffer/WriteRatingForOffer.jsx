@@ -55,7 +55,7 @@ const WriteRatingForOffer = ({ offerToRate }) => {
 
     const createOrUpdateRating = async (offerRatingsFromDB) => {
         if (offerRatingsFromDB?.data) {
-            const filterRating = offerRatingsFromDB.data.filter((rating) => rating.owner._id == userLoged._id);
+            const filterRating = offerRatingsFromDB.data.filter((rating) => rating.owner?._id == userLoged._id);
 
             if (filterRating.length == 0) {
                 setResponseCreateRating(await createRating({ "score": ratingValue, "referenceOffer": offerToRate._id }));
@@ -123,7 +123,8 @@ const WriteRatingForOffer = ({ offerToRate }) => {
         <div>
             <Rating
                 name="Write Ratings For Offer"
-                value={ratingValue}
+                //value={ratingValue}
+                value={ratingValue === -1 ? 0 : ratingValue}
                 onChange={(event, newRatingValue) => {
                     setRatingValue(newRatingValue);
                 }}
