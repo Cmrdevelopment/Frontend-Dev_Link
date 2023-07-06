@@ -70,3 +70,13 @@ export const updateOffer = async (id, formData) => {
       return error;
     });
 };
+
+
+//! -----------------------DELETE OFFER -----------------------------------
+export const deleteOffer = async (id) => {
+  return API.delete(`/offers/deleteOffer/${id}`)
+    .then((res) => res)
+    .catch((error) => {
+      return error;
+    });
+};

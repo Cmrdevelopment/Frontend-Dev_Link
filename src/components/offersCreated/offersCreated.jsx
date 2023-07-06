@@ -3,6 +3,7 @@ import { useAuth } from '../../contexts/authContext';
 import { getUserById } from '../../services/API_proyect/user.service';
 import './offersCreated.css';
 import { updateOffer } from '../../services/API_proyect/offer.service';
+import DeleteOfferButton from '../DeleteOffer/DeleteOffer';
 
 const OffersCreated = () => {
   const [offers, setOffers] = useState([]);
@@ -70,6 +71,12 @@ const OffersCreated = () => {
                 </select>
               </p>
               <p>Tecnologías: {offer.technologies.join(', ')}</p>
+              <DeleteOfferButton
+                  id={offer._id}
+                  offers={offers}
+                  setOffers={setOffers}
+                />
+            
             </li>
           ))}
         </ul>
