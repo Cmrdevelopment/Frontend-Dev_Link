@@ -17,7 +17,8 @@ import DeveloperDetails2 from './pages/DeveloperDetails2/DeveloperDetails2';
 import OfferDetails from './pages/OfferDetails/OfferDetails';
 import Offers from './pages/Offers/Offers';
 // import CreateOffer from './components/CreateOffer/CreateOffer';
-import CreateOffer2 from 'src/components/CreateOffer2/CreateOffer2';
+import CreateOffer2 from './components/CreateOffer2/CreateOffer2';
+
 import AboutUs from './pages/AboutUs/AboutUs';
 import UserProfile from './components/HeaderProfile/HeaderProfile';
 import ChangePassword2 from './components/ChangePassword2/ChangePassword2';
@@ -27,6 +28,7 @@ import Experience from './components/Experience/Experience';
 import Offer from './components/Offers/Offers';
 import Tecnologias from './components/Tecnologias/Tecnologias';
 import PrivateComment from './components/PrivateComment/PrivateComment';
+
 // import PruebaEmotion from './pages/PruebaEmotion/PruebaEmotion';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

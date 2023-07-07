@@ -1,8 +1,9 @@
-.crear-oferta-titulo{
+
+.crear-oferta-titulo {
     margin: 0 0 25px 0;
 }
 
-.form-container-titulo-tipo-oferta-tecnologias-Uploadfile{
+.form-container-titulo-tipo-oferta-tecnologias-Uploadfile {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,19 +11,16 @@
     gap: 12px;
     border: 1px solid #cecfd0;
     padding: 0 20px;
-    border-radius: px;
     border-radius: 12px;
 }
 
-
-
-.form-container-años-salario-ciudad{
+.form-container-años-salario-ciudad {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-container-titulo-tipo-oferta-tecnologias-Uploadfile{
+.form-container-titulo-tipo-oferta-tecnologias-Uploadfile {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -30,11 +28,10 @@
 }
 
 .input-select {
-border-radius: 12px;
-
+    border-radius: 12px;
 }
 
-.form-container-titulo-descripción-responsabilidades-requisitos-remuneracion{
+.form-container-titulo-descripción-responsabilidades-requisitos-remuneracion {
     display: flex;
     justify-content: center;
     border: 1px solid #cecfd0;
@@ -42,14 +39,13 @@ border-radius: 12px;
     margin-top: 25px;
     padding: 0 0 12px 0;
     border-radius: 12px;
-
 }
 
-.form-container-descripcion-ganeral-responsabilidades{
-width: 50%;
+.form-container-descripcion-ganeral-responsabilidades {
+    width: 50%;
 }
 
-.form-container-descripcion-requisitos-remuneracion{
+.form-container-descripcion-requisitos-remuneracion {
     width: 50%;
 }
 
@@ -62,7 +58,6 @@ width: 50%;
     justify-content: center;
     align-items: center;
     font-family: var(--font-bold);
-
 }
 
 .h3-oferta {
@@ -107,17 +102,13 @@ width: 50%;
     margin-top: 30px;
 }
 
-/* AQUI */
-
 #createOffer-select {
     margin-top: 20px;
-    
     width: 350px;
     height: 44px;
     text-align: center;
     border: 2px solid #cecfd0;
     color: #818181;
-
 }
 
 .textarea-description {
@@ -127,7 +118,6 @@ width: 50%;
 
 .tecnologies-Offer {
     margin-top: 5px;
-    /* padding-left: 30px; */
     overflow: auto;
     height: 180px;
     width: 300px;
@@ -135,8 +125,6 @@ width: 50%;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
-
-/* AQUI */
 
 .input-create-offer-años-salario-ciudad {
     height: 30px;

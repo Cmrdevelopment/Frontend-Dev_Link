@@ -166,7 +166,12 @@
 #sidebar:hover {
   width: 250px;
 
-  && div span {
+  /* && div span {
     display: inline;
-  }
+  } */
+}
+
+#sidebar:hover div > span  {
+
+    display: inline;
 }
