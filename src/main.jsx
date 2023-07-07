@@ -17,7 +17,7 @@ import DeveloperDetails2 from './pages/DeveloperDetails2/DeveloperDetails2';
 import OfferDetails from './pages/OfferDetails/OfferDetails';
 import Offers from './pages/Offers/Offers';
 // import CreateOffer from './components/CreateOffer/CreateOffer';
-import CreateOffer2 from './components/CreateOffer2/CreateOffer2';
+import CreateOffer2 from 'src/components/CreateOffer2/CreateOffer2';
 import AboutUs from './pages/AboutUs/AboutUs';
 import UserProfile from './components/HeaderProfile/HeaderProfile';
 import ChangePassword2 from './components/ChangePassword2/ChangePassword2';
