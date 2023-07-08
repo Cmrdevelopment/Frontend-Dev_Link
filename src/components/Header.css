@@ -221,7 +221,7 @@ nav {
     position: fixed;
     top: -120vh;
     left: 0;
-    height: 500px;
+    height: 300px;
     width: 390px;
     display: flex;
     flex-direction: column;
