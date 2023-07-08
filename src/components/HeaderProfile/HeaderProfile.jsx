@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
 import './HeaderProfile.css';
-import { getUserById } from '../../services/API_proyect/user.service';
+
+import React, { useEffect, useState } from 'react';
+
 import { useAuth } from '../../contexts/authContext';
+import { getUserById } from '../../services/API_proyect/user.service';
 
 const UserProfile = () => {
   const [userData, setUserData] = useState(null);

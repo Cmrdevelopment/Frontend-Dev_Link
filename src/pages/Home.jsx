@@ -1,6 +1,8 @@
 import './Home.css';
+
 import { NavLink } from 'react-router-dom';
-import ButtonStyle from '../components/ButtonStyle/ButtonStyle';
+
+//import ButtonStyle from '../components/ButtonStyle/ButtonStyle';
 //import { ThemeProvider, useTheme } from "@emotion/react";
 //import GlobalStyles from '../../styles/globalStyles';
 
@@ -156,7 +158,8 @@ export const Home = () => {
         <section className="home-review-section">
           <figure className="home-review-figure">
             <p className="home-review-figure-p">
-            Gracias a DevLink, he podido encontrar proyectos emocionantes, colaborar con equipos talentosos y expandir mi red profesional.
+              Gracias a DevLink, he podido encontrar proyectos emocionantes, colaborar con
+              equipos talentosos y expandir mi red profesional.
             </p>
             <div className="home-review-developer">
               <img
@@ -174,7 +177,8 @@ export const Home = () => {
 
           <figure className="home-review-figure">
             <p className="home-review-figure-p">
-            Me complace compartir mi experiencia con DevLink, una plataforma que ha sido fundamental en mi búsqueda de empleo como frontend developer.
+              Me complace compartir mi experiencia con DevLink, una plataforma que ha sido
+              fundamental en mi búsqueda de empleo como frontend developer.
             </p>
             <div className="home-review-developer">
               <img
@@ -192,8 +196,8 @@ export const Home = () => {
 
           <figure className="home-review-figure">
             <p className="home-review-figure-p">
-            He tenido la oportunidad de acceder a increíbles ofertas de trabajo a través de esta plataforma.
-
+              He tenido la oportunidad de acceder a increíbles ofertas de trabajo a través
+              de esta plataforma.
             </p>
             <div className="home-review-developer">
               <img

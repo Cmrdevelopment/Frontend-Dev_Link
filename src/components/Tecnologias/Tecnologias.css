@@ -10,14 +10,13 @@
   font-weight: 650;
 }
 
-.choose_technologies-container-choose-padre{
+.choose_technologies-container-choose-padre {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3px;
 }
-
 
 .father-container-technologies {
   display: flex;
@@ -26,7 +25,6 @@
   align-items: center;
   /* width: 60vw; */
   gap: 0.5rem;
-
 }
 
 .tech-image {
@@ -37,7 +35,6 @@
 .tech-image-text {
   font-size: 12px;
   margin: 9px 0 0 0px;
-
 }
 
 .tecnologia-item {
@@ -49,7 +46,6 @@
   align-items: center;
   justify-content: center;
   margin: 0.1px;
-
 }
 
 .image-container {
@@ -67,9 +63,7 @@
   margin-top: 30px;
 }
 
-
 @media screen and (max-width: 880px) {
-
   .father-container-technologies {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -78,7 +72,6 @@
     height: 430px;
     width: 270px;
   }
-  
 
   .choose_technologies-container-choose {
     display: flex;
@@ -86,7 +79,6 @@
     align-items: center;
     font-size: 21px;
     text-align: center;
-
   }
   .choose_technologies-container-choose:hover {
     font-weight: 650;

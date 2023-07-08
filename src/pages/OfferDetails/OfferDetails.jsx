@@ -1,26 +1,27 @@
 import './OfferDetails.css';
 import './OfferDetailsDescription.css';
 import './OfferDetailsComments.css';
-import { useLocation } from 'react-router-dom';
+
+import { Avatar, Button, Divider, Grid, Paper, TextField, useTheme } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { getOfferById } from '../../services/API_proyect/offer.service';
-import { useTheme, Divider, Avatar, Grid, Paper, TextField, Button } from '@mui/material';
+import { BiCodeAlt } from 'react-icons/bi';
+import { BsCalendarDay } from 'react-icons/bs';
+import { FaMapMarker } from 'react-icons/fa';
+import { FaLaptopCode } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
+import Swal from 'sweetalert2/dist/sweetalert2.all.js';
+
+import Comments from '../../components/Comments/Comments';
+import DeleteCommentComponent from '../../components/DeleteComment/DeleteComment';
+import ReadOnlyOfferRating from '../../components/ratings/ReadOnlyOfferRating/ReadOnlyOfferRating';
+import WriteRatingForOffer from '../../components/ratings/WriteRatingForOffer/WriteRatingForOffer';
+import { technologies } from '../../data/object.tecnologias';
+import { createMasChat } from '../../services/API_proyect/chat.service';
 import {
   createComment,
   getByReference,
 } from '../../services/API_proyect/comment.service';
-import Comments from '../../components/Comments/Comments';
-import ReadOnlyOfferRating from '../../components/ratings/ReadOnlyOfferRating/ReadOnlyOfferRating';
-import WriteRatingForOffer from '../../components/ratings/WriteRatingForOffer/WriteRatingForOffer';
-import { FaMapMarker } from 'react-icons/fa';
-import { FaLaptopCode } from 'react-icons/fa';
-import { BiCodeAlt } from 'react-icons/bi';
-import { BsCalendarDay } from 'react-icons/bs';
-import { technologies } from '../../data/object.tecnologias';
-import Swal from 'sweetalert2/dist/sweetalert2.all.js';
-import { createChat, createMasChat } from '../../services/API_proyect/chat.service';
-import { useAuth } from '../../contexts/authContext';
-import DeleteCommentComponent from '../../components/DeleteComment/DeleteComment';
+import { getOfferById } from '../../services/API_proyect/offer.service';
 
 const OfferDetails = () => {
   const [res, setRes] = useState({});
@@ -34,7 +35,6 @@ const OfferDetails = () => {
   const theme = useTheme();
   const { state } = useLocation();
   const { id } = state;
-  const { user } = useAuth();
 
   const getData = async () => {
     setLoading(true);
@@ -266,7 +266,6 @@ const OfferDetails = () => {
               width: '100%',
             }}
           >
-
             <h3>Comentario privado</h3>
             <Grid container wrap="nowrap" spacing={2}>
               <Grid item>
@@ -313,8 +312,7 @@ const OfferDetails = () => {
             </Grid>
           </Paper>
         </div>
-      ) : null
-      }
+      ) : null}
       {/* <div className="offerDetails-horizontal-line"></div> */}
 
       {/* -------------------COMMENTS ----------------------------- */}
@@ -387,7 +385,7 @@ const OfferDetails = () => {
         </Paper>
       </div>
       {/* ------------------ COMMENTS ------------------------------- */}
-    </div >
+    </div>
   );
 };
 

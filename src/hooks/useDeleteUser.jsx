@@ -1,6 +1,7 @@
-import Swal from 'sweetalert2/dist/sweetalert2.all.js';
-import { deleteUser } from '../services/API_proyect/user.service';
 import { Navigate } from 'react-router-dom';
+import Swal from 'sweetalert2/dist/sweetalert2.all.js';
+
+import { deleteUser } from '../services/API_proyect/user.service';
 
 const useDeleteUser = (setUser, logout) => {
   Swal.fire({

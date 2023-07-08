@@ -1,14 +1,14 @@
 export const getVariants = (theme, variant) => {
   switch (variant) {
-    case "header":
+    case 'header':
       return getHeaderVariant(theme);
-    case "small":
+    case 'small':
       return getSmallVariant(theme);
-    case "large":
+    case 'large':
       return getLargeVariant(theme);
-    case "extralarge":
+    case 'extralarge':
       return getExtralargeVariant(theme);
-    case "medium":
+    case 'medium':
     default:
       return getMediumVariant(theme);
   }
@@ -25,11 +25,10 @@ const getHeaderVariant = (theme) => ({
   // border: `${theme.spacing(0.35)} solid ${theme.palette.border.main}`,
 });
 
-
 const getSmallVariant = (theme) => {
-  console.log("getSmallVariant -> theme: ", theme);
+  console.log('getSmallVariant -> theme: ', theme);
 
-  return ({
+  return {
     width: theme.spacing(18.12),
     height: theme.spacing(4.87),
     backgroundColor: theme.palette.button.background.accent,
@@ -38,13 +37,13 @@ const getSmallVariant = (theme) => {
     borderRadius: theme.spacing(2.5),
     fontSize: theme.spacing(2),
     '&:hover': {
-      backgroundColor: "rgb(250, 250, 250)",
-      color: "#25d366",
-      borderBottom: "1.5px  solid #25d366",
-      fontSize: "18px"
-    }
-  });
-}
+      backgroundColor: 'rgb(250, 250, 250)',
+      color: '#25d366',
+      borderBottom: '1.5px  solid #25d366',
+      fontSize: '18px',
+    },
+  };
+};
 
 // const getMediumVariant = (theme) => ({
 //   width: theme.spacing(18.7),

@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
 import './Offers.css';
+
+import React, { useState } from 'react';
+
 import OffersCreated from '../offersCreated/offersCreated';
 import OffersInterested from '../OffersInterested/offersInterested';
 

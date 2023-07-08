@@ -1,7 +1,9 @@
-import React from 'react';
-import { deleteExperience } from '../../services/API_proyect/experience.service';
 import './DeleteExperience.css';
+
+import React from 'react';
+
 import handleExperienceDeletionResponse from '../../hooks/useDeleteExperience';
+import { deleteExperience } from '../../services/API_proyect/experience.service';
 
 const DeleteExperienceButton = ({ id, experiences, setExperiences }) => {
   const handleDeleteExperience = async (id) => {

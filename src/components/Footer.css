@@ -3,7 +3,7 @@ footer {
   width: 100%;
   background-color: #273143;
   padding: 70px;
-  border-top: 2px solid rgb(130,130,130);
+  border-top: 2px solid rgb(130, 130, 130);
   display: flex;
   justify-content: space-around;
 }
@@ -21,13 +21,13 @@ footer {
 }
 
 .footer-infotmation-title {
-  color: rgb(210,210,210);
+  color: rgb(210, 210, 210);
   font-size: 25px;
 }
 
 .footer-information-description {
   font-size: 15px;
-  color: rgb(190,190,190);
+  color: rgb(190, 190, 190);
 }
 
 .footer-container-img {
@@ -36,7 +36,7 @@ footer {
 }
 
 .footer-icon-p {
-  background: linear-gradient(to right,  #AD24AD, #00aaff);
+  background: linear-gradient(to right, #ad24ad, #00aaff);
   -webkit-background-clip: text; /* Para navegadores basados en WebKit, como Chrome y Safari */
   -webkit-text-fill-color: transparent; /* Para navegadores basados en WebKit, como Chrome y Safari */
   background-clip: text; /* Para navegadores que no son WebKit */
@@ -48,7 +48,7 @@ footer {
 
 .footer-icon {
   display: flex;
-  margin:6px;
+  margin: 6px;
   padding: 3px;
   height: 36px;
   width: 40px;
@@ -79,17 +79,17 @@ footer {
 .footer-input-text {
   border: none;
   background-color: transparent;
-  border-bottom: 1.5px solid  rgb(110,110,110);;
+  border-bottom: 1.5px solid rgb(110, 110, 110);
 }
 
 .footer-form-title {
-  color: rgb(210,210,210);
+  color: rgb(210, 210, 210);
   font-size: 25px;
 }
 
 .footer-form > label {
   font-size: 12px;
-   color: rgb(190,190,190);
+  color: rgb(190, 190, 190);
 }
 
 .footer-input-text {
@@ -112,7 +112,7 @@ footer {
 
 .footer-input-submit:hover {
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 1083px) {

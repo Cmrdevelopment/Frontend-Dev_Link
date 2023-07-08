@@ -1,7 +1,9 @@
+import './ForgotPassword.css';
+
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Navigate } from 'react-router-dom';
-import "./ForgotPassword.css"
+
 import useForgotPasswordError from '../hooks/useForgotPasswordError';
 import { forgotPasswordUser } from '../services/API_proyect/user.service';
 
@@ -31,33 +33,31 @@ const ForgotPassword = () => {
   }
 
   return (
-    <div className='forgotPassword-container'>
-
+    <div className="forgotPassword-container">
       <div className="forgotPassword-form-wrap">
+        <h2 className="forgotPassword-title">Cambia tu contraseña</h2>
 
-        <h2 className='forgotPassword-title'>Cambia tu contraseña</h2>
+        <form className="forgotPassword-form" onSubmit={handleSubmit(formSubmit)}>
+          <input
+            htmlFor="custom-input"
+            placeholder="Email"
+            className="forgotPassword-input_user"
+            type="text"
+            id="email"
+            name="email"
+            autoComplete="false"
+            {...register('email', { required: true })}
+          />
 
-        <form className='forgotPassword-form' onSubmit={handleSubmit(formSubmit)}>
-          
-            <input
-              htmlFor="custom-input"
-              placeholder='Email'
-              className="forgotPassword-input_user"
-              type="text"
-              id="email"
-              name="email"
-              autoComplete="false"
-              {...register('email', { required: true })}
-            />
+          <button className="forgotPassword-btn" type="submit" disabled={send}>
+            Cambiar
+          </button>
 
-          <button className="forgotPassword-btn" type="submit" disabled={send}>Cambiar</button>
-
-          <p className='forgotPassword-form-p'>Comprueba tu correo para ver la nueva contraseña</p>
-         
+          <p className="forgotPassword-form-p">
+            Comprueba tu correo para ver la nueva contraseña
+          </p>
         </form>
-
       </div>
-
     </div>
   );
 };

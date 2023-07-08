@@ -1,10 +1,7 @@
-import { useState, useEffect } from 'react';
-import { AiOutlineHeart, AiTwotoneHeart } from 'react-icons/ai';
 import './ToggleBtnFollowUser.css';
-// import {
-//     app_ToggleApp,
-//     getFavoriteStatus,
-// } from "../../services/API_proyect/app.service";
+
+import { useEffect, useState } from 'react';
+import { AiOutlineHeart, AiTwotoneHeart } from 'react-icons/ai';
 
 import {
   developer_following_follower,
@@ -33,16 +30,12 @@ const ToggleBtnFollowUser = ({ userToFollowId }) => {
 
   const handleAddToFavorites = async () => {
     try {
-      //const response = await app_ToggleApp(appId);
       const response = await developer_following_follower(userToFollowId);
-      // if (
-      //     response === "Added to favourites!" ||
-      //     response === "Removed from favourites"
-      // ) {
-      //     setIsFavorite(!isFavorite);
-      // }
+      if (response?.data?.status === 'Success updating following -- Followers') {
+        setIsFavorite(!isFavorite);
+      }
 
-      setIsFavorite(!isFavorite);
+      // setIsFavorite(!isFavorite);
     } catch (error) {
       console.error('Error while adding to favorites', error);
     }

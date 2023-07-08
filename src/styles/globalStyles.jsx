@@ -1,72 +1,70 @@
-import { Global } from "@emotion/react";
+import { Global } from '@emotion/react';
 
 const GlobalStyles = () => {
   return (
     <Global
       styles={(theme) => [
         {
-          "*": {
-            fontFamily: "Regular",
-            boxSizing: "border-box",
+          '*': {
+            fontFamily: 'Regular',
+            boxSizing: 'border-box',
           },
-          "html,body": {
+          'html,body': {
             padding: 0,
             margin: 0,
             backgroundColor: theme.palette.background.main,
             color: theme.palette.color.main,
           },
 
-          "header": {
-            height: "5vh",
+          header: {
+            height: '5vh',
           },
 
-          "footer": {
-            height: "10vh",
+          footer: {
+            height: '10vh',
           },
-
-
 
           // ".prueba": {
           //   background: "black",
           // },
-          "::-webkit-scrollbar": {
+          '::-webkit-scrollbar': {
             width: theme.spacing(0.75),
             background: theme.palette.color.main,
           },
-          "::-webkit-scrollbar-track": {
+          '::-webkit-scrollbar-track': {
             boxShadow: `inset 0 0 5px ${theme.palette.color.main}`,
           },
-          "::-webkit-scrollbar-thumb": {
+          '::-webkit-scrollbar-thumb': {
             width: theme.spacing(0.75),
             background: theme.palette.button.main,
             borderRadius: theme.spacing(0.5),
           },
           a: {
-            color: "inherit",
-            textDecoration: "none",
+            color: 'inherit',
+            textDecoration: 'none',
           },
         },
         {
-          "@font-face": {
-            fontFamily: "Regular",
+          '@font-face': {
+            fontFamily: 'Regular',
             src: `url(${theme.typography.fonts.regular}) format("truetype")`,
           },
         },
         {
-          "@font-face": {
-            fontFamily: "Italic",
+          '@font-face': {
+            fontFamily: 'Italic',
             src: `url(${theme.typography.fonts.italic}) format("truetype")`,
           },
         },
         {
-          "@font-face": {
-            fontFamily: "Bold",
+          '@font-face': {
+            fontFamily: 'Bold',
             src: `url(${theme.typography.fonts.bold}) format("truetype")`,
           },
         },
         {
-          "@font-face": {
-            fontFamily: "SemiBold",
+          '@font-face': {
+            fontFamily: 'SemiBold',
             src: `url(${theme.typography.fonts.semibold}) format("truetype")`,
           },
         },

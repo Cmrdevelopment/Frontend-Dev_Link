@@ -3,14 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-.form-wrap-formProfile{
+.form-wrap-formProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .formProfile-text-new-profile {
@@ -26,7 +24,6 @@
   font-weight: 650;
 }
 
-
 .form-wrap {
   border-radius: 0px;
   /* width: 270px;
@@ -40,15 +37,14 @@
 
 .input_user-perfil {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 18px;
-  border: 1px solid #e3e4e5;  
+  border: 1px solid #e3e4e5;
   border-radius: 12px;
   font-size: 16px;
-  
 }
 
 .btn {
@@ -65,10 +61,8 @@
     flex-direction: column;
   }
   .formProfile-text-new-profile {
-
     font-size: 21px;
     margin-bottom: 0.5rem;
-
   }
 }
 

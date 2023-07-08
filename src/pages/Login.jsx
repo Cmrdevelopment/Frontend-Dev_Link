@@ -37,42 +37,38 @@ const Login = () => {
     }
   }
   return (
-    <div className='login-container'>
-
+    <div className="login-container">
       <div className="login-form-wrap">
-
-        <h2 className='login-title'>Inicia sesión</h2>
+        <h2 className="login-title">Inicia sesión</h2>
 
         <p>Bienvenido de nuevo!</p>
 
-        <form className='login-form-container' onSubmit={handleSubmit(formSubmit)}>
-          
-            <input
-              htmlFor="custom-input"
-              placeholder='Email'
-              className="login-input_user"
-              type="email"
-              id="email"
-              name="email"
-              autoComplete="false"
-              {...register('email', { required: true })}
-            />
-            
-            <input
-              htmlFor="custom-input"
-              placeholder='Password'
-              className="login-input_user"
-              type="password"
-              id="password"
-              name="password"
-              autoComplete="false"
-              {...register('password', { required: true })}
-            />
+        <form className="login-form-container" onSubmit={handleSubmit(formSubmit)}>
+          <input
+            htmlFor="custom-input"
+            placeholder="Email"
+            className="login-input_user"
+            type="email"
+            id="email"
+            name="email"
+            autoComplete="false"
+            {...register('email', { required: true })}
+          />
 
-            <button className="login-button" type="submit" disabled={send}>
-             Iniciar sesión
-            </button>
+          <input
+            htmlFor="custom-input"
+            placeholder="Password"
+            className="login-input_user"
+            type="password"
+            id="password"
+            name="password"
+            autoComplete="false"
+            {...register('password', { required: true })}
+          />
 
+          <button className="login-button" type="submit" disabled={send}>
+            Iniciar sesión
+          </button>
         </form>
       </div>
 
@@ -80,13 +76,13 @@ const Login = () => {
         <p className="parrafoLogin">
           Estás registrado?
           <Link className="parrafoRegisterHere" to="/register">
-            <span className='login-span-two'>Registrate aquí</span>
+            <span className="login-span-two">Registrate aquí</span>
           </Link>
         </p>
         <p> Has olvidado la contraseña?</p>
-      <Link to="/forgotpassword" className="anchorCustom">
-                &nbsp;&nbsp;<span className='login-span-one'>Cambiar Contraseña</span>
-              </Link>
+        <Link to="/forgotpassword" className="anchorCustom">
+          &nbsp;&nbsp;<span className="login-span-one">Cambiar Contraseña</span>
+        </Link>
       </div>
     </div>
   );

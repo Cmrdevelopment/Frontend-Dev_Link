@@ -1,11 +1,13 @@
-import React from 'react';
 import './Tecnologias.css';
-import { technologies } from '../../data/object.tecnologias';
-import ToggleTech from '../Toggle tecnologies/Toggle';
-import { getUserById, updateTecnologia } from '../../services/API_proyect/user.service';
-import { useState, useEffect } from 'react';
+
+import React from 'react';
+import { useEffect, useState } from 'react';
+
 import { useAuth } from '../../contexts/authContext';
+import { technologies } from '../../data/object.tecnologias';
 import handleTechnologyUpdateResponse from '../../hooks/useSaveTecnologia';
+import { getUserById, updateTecnologia } from '../../services/API_proyect/user.service';
+import ToggleTech from '../Toggle tecnologies/Toggle';
 
 const Tecnologias = () => {
   const [arrayTecn, setArrayTecn] = useState(() => []);
@@ -16,7 +18,6 @@ const Tecnologias = () => {
 
   const handleServiceAdd = async () => {
     setSend(true);
-    let arrayString = JSON.stringify(arrayTecn);
     const updateRes = await updateTecnologia({ technologies: arrayTecn });
     setRes(updateRes);
     handleTechnologyUpdateResponse(updateRes);
@@ -34,9 +35,7 @@ const Tecnologias = () => {
   }, []);
 
   useEffect(() => {
-    console.log(resInit);
     if (resInit?.status == 200) {
-      console.log(resInit.data.technologies);
       setArrayTecn(resInit.data.technologies);
     }
   }, [resInit]);
@@ -47,29 +46,35 @@ const Tecnologias = () => {
 
   useEffect(() => {
     if (res?.status == '200') {
-      console.log(res.data.newUser.technologies);
       setArrayTecn(res.data.newUser.technologies);
     }
   }, [res]);
 
   return (
     <>
-    <section className="choose_technologies-container-choose-padre">
-      <p className="choose_technologies-container-choose">Selecciona tus tecnologías</p>
-      <div className="father-container-technologies">
-        {technologies.map((technology, index) => (
-          <figure key={index} className="tecnologia-item" id={technology.name}>
-            <div className="image-container">
-              <img className="tech-image" src={technology.image} alt={technology.name} />
-            </div>
+      <section className="choose_technologies-container-choose-padre">
+        <p className="choose_technologies-container-choose">Selecciona tus tecnologías</p>
+        <div className="father-container-technologies">
+          {technologies.map((technology, index) => (
+            <figure key={index} className="tecnologia-item" id={technology.name}>
+              <div className="image-container">
+                <img
+                  className="tech-image"
+                  src={technology.image}
+                  alt={technology.name}
+                />
+              </div>
 
-            <p className="tech-image-text">{technology.name}</p>
-            <ToggleTech setArrayTecn={setArrayTecn} arrayTecn={arrayTecn} />
-          </figure>
-        ))}
-        
-      </div>
-      <button className="btn_profile_general btn_profile_general_tech" onClick={() => handleServiceAdd()} disabled={send}>
+              <p className="tech-image-text">{technology.name}</p>
+              <ToggleTech setArrayTecn={setArrayTecn} arrayTecn={arrayTecn} />
+            </figure>
+          ))}
+        </div>
+        <button
+          className="btn_profile_general btn_profile_general_tech"
+          onClick={() => handleServiceAdd()}
+          disabled={send}
+        >
           {' '}
           GUARDAR MIS TECH
         </button>

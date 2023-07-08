@@ -1,5 +1,6 @@
-import DevelopersList from '../../components/DevelopersList/DevelopersList';
 import { useMediaQuery } from 'react-responsive';
+
+import DevelopersList from '../../components/DevelopersList/DevelopersList';
 
 const Developers = () => {
   const isLargeScreen = useMediaQuery({ minWidth: 880 });
@@ -12,7 +13,6 @@ const Developers = () => {
           Conozca a nuestros <u>desarrolladores</u> freelance.
         </h1>
       ) : (
-
         <h1>
           Sigue a nuestros <u>Developers</u>!
         </h1>

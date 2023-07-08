@@ -71,7 +71,6 @@ export const updateOffer = async (id, formData) => {
     });
 };
 
-
 //! -----------------------DELETE OFFER -----------------------------------
 export const deleteOffer = async (id) => {
   return API.delete(`/offers/deleteOffer/${id}`)

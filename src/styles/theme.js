@@ -1,5 +1,5 @@
-import { lighten, darken } from "./colorManipulator";
-import { spacing } from "./utils";
+//import { darken, lighten } from './colorManipulator';
+import { spacing } from './utils';
 
 export const BREAKPOINTS = {
   extraSmall: 320,
@@ -16,37 +16,36 @@ export const ZINDEX = {
 };
 
 const PALETTE_COLOR_LIGHT = {
-  mainColor: "#fff",
-  accent: "#25d366",
-  terceary: "#292f40",
-  fourth: "#000",
+  mainColor: '#fff',
+  accent: '#25d366',
+  terceary: '#292f40',
+  fourth: '#000',
   // textColor: "#75809a",
-  textColor: "white",
-  textBtnColor: "#ffffff",
-  warning: "#f7bc0c",
+  textColor: 'white',
+  textBtnColor: '#ffffff',
+  warning: '#f7bc0c',
   //error: "#f70c0c",
-  error: "#000000",
-  border: "blue",
-  prueba: "red",
-  pruebaColor: "black",
-  transparent: "transparent"
+  error: '#000000',
+  border: 'blue',
+  prueba: 'red',
+  pruebaColor: 'black',
+  transparent: 'transparent',
 };
 
 const PALETTE_COLOR_DARK = {
-  mainColor: "#111B21",
-  accent: "#fff",
-  terceary: "#f4f5f6",
-  fourth: "#fff",
+  mainColor: '#111B21',
+  accent: '#fff',
+  terceary: '#f4f5f6',
+  fourth: '#fff',
   // textColor: "#75809a",
-  textColor: "black",
-  textBtnColor: "#000",
-  warning: "#f7bc0c",
-  error: "#f70c0c",
-  prueba: "yellow",
-  pruebaColor: "white",
-  transparent: "transparent"
+  textColor: 'black',
+  textBtnColor: '#000',
+  warning: '#f7bc0c',
+  error: '#f70c0c',
+  prueba: 'yellow',
+  pruebaColor: 'white',
+  transparent: 'transparent',
 };
-
 
 export const themeLight = {
   palette: {
@@ -77,7 +76,7 @@ export const themeLight = {
       },
       border: {
         transparent: PALETTE_COLOR_LIGHT.transparent,
-      }
+      },
     },
     border: {
       main: PALETTE_COLOR_LIGHT.border,
@@ -93,21 +92,13 @@ export const themeLight = {
   },
   typography: {
     fonts: {
-      bold: "/assets/fonts/Rubik-Bold.ttf",
-      italic: "/assets/fonts/Rubik-Italic.ttf",
-      regular: "/assets/fonts/Rubik-Regular.ttf",
-      semibold: "/assets/fonts/Rubik-SemiBold.ttf",
+      bold: '/assets/fonts/Rubik-Bold.ttf',
+      italic: '/assets/fonts/Rubik-Italic.ttf',
+      regular: '/assets/fonts/Rubik-Regular.ttf',
+      semibold: '/assets/fonts/Rubik-SemiBold.ttf',
     },
   },
   spacing,
-  typography: {
-    fonts: {
-      bold: "/assets/fonts/Rubik-Bold.ttf",
-      italic: "/assets/fonts/Rubik-Italic.ttf",
-      regular: "/assets/fonts/Rubik-Regular.ttf",
-      semibold: "/assets/fonts/Rubik-SemiBold.ttf",
-    },
-  },
 };
 
 export const themeDark = {
@@ -139,7 +130,7 @@ export const themeDark = {
       },
       border: {
         transparent: PALETTE_COLOR_DARK.transparent,
-      }
+      },
     },
     border: {
       main: PALETTE_COLOR_DARK.border,
@@ -154,10 +145,10 @@ export const themeDark = {
   },
   typography: {
     fonts: {
-      bold: "/assets/fonts/Rubik-Bold.ttf",
-      italic: "/assets/fonts/Rubik-Italic.ttf",
-      regular: "/assets/fonts/Rubik-Regular.ttf",
-      semibold: "/assets/fonts/Rubik-SemiBold.ttf",
+      bold: '/assets/fonts/Rubik-Bold.ttf',
+      italic: '/assets/fonts/Rubik-Italic.ttf',
+      regular: '/assets/fonts/Rubik-Regular.ttf',
+      semibold: '/assets/fonts/Rubik-SemiBold.ttf',
     },
   },
   spacing,

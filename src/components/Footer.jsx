@@ -23,8 +23,7 @@ const Footer = () => {
             className="footer-icon"
           ></img>
           <h3 className="titleWeb">Dev</h3>
-            <h3 className="titleWeb-second">Link</h3>
-       
+          <h3 className="titleWeb-second">Link</h3>
         </div>
       </div>
 

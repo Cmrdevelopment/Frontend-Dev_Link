@@ -1,6 +1,7 @@
 import React from 'react';
-import { useAuth } from '../../contexts/authContext';
 import { BiTrashAlt } from 'react-icons/bi';
+
+import { useAuth } from '../../contexts/authContext';
 import { deleteComment } from '../../services/API_proyect/comment.service';
 
 const DeleteCommentComponent = ({ commentId }) => {

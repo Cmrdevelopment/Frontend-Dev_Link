@@ -2,7 +2,7 @@
   {
     "name": "Juan",
     "surname": "García Hernandez",
-    "image": "https://res.cloudinary.com/dhlr7fvd8/image/upload/v1688029760/Profilepictures/Captura26_wnvhjy.png" ,
+    "image": "https://res.cloudinary.com/dhlr7fvd8/image/upload/v1688029760/Profilepictures/Captura26_wnvhjy.png",
     "description": "Soy un desarrollador apasionado con experiencia en software innovador. Especializado en aplicaciones web y móviles con JavaScript, Python y React Native. Enfocado en la calidad y la satisfacción del usuario, convierto ideas en realidades atractivas y funcionales. ¡Listo para colaborar en proyectos desafiantes y llevarlos al siguiente nivel!",
     "city": "Murcia",
     "password": "Juan2023.",
@@ -395,7 +395,7 @@
   {
     "name": "Carlos",
     "surname": "Martínez",
-    "image":"https://res.cloudinary.com/dhlr7fvd8/image/upload/v1688033248/Profilepictures/Captura43_b8000c.png",
+    "image": "https://res.cloudinary.com/dhlr7fvd8/image/upload/v1688033248/Profilepictures/Captura43_b8000c.png",
     "description": "Soy un ingeniero de software con experiencia en el desarrollo de aplicaciones empresariales. Mi enfoque principal es la creación de soluciones escalables y seguras utilizando tecnologías como Java, Spring y MySQL. Me apasiona trabajar en proyectos desafiantes que requieran un alto nivel de calidad y rendimiento. Estoy constantemente aprendiendo y adoptando nuevas tecnologías para mantenerme actualizado en el campo del desarrollo de software.",
     "city": "Valencia",
     "password": "CarlosMartinez2023!",
@@ -592,7 +592,7 @@
   {
     "name": "Xiomara",
     "surname": "Velasco Quijano",
-    "image":"https://res.cloudinary.com/dhlr7fvd8/image/upload/v1688034662/Profilepictures/Captura59_feoaic.png",
+    "image": "https://res.cloudinary.com/dhlr7fvd8/image/upload/v1688034662/Profilepictures/Captura59_feoaic.png",
     "description": "Xiomara Velasco Quijano, desarrolladora apasionada con experiencia en software innovador. Especializada en aplicaciones web y móviles con JavaScript, Python y React Native. Enfocada en soluciones prácticas y atractivas, lista para enfrentar desafíos y llevar proyectos al siguiente nivel. ¡Confía tus proyectos para tus necesidades de desarrollo de software!",
     "city": "Valencia",
     "password": "Xiomara2023.",

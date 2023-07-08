@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import './Profile.css';
+
+import React, { useEffect, useState } from 'react';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
+
+import UserProfile from '../components/HeaderProfile/HeaderProfile';
 import { useAuth } from '../contexts/authContext';
 import useDeleteUser from '../hooks/useDeleteUser';
-import UserProfile from '../components/HeaderProfile/HeaderProfile';
-import './Profile.css';
-import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 
 const Profile = () => {
   const navigate = useNavigate();

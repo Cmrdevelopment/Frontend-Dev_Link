@@ -1,25 +1,16 @@
-
-
-
-
 .offersList-offers-container > h2 {
-    font-size: 23px;
-    display: flex;
-    justify-content: left;
-    align-items:flex-start ;
-    padding: 0 0 5px 0;
-    font-weight: 700;
-
+  font-size: 23px;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 0 0 5px 0;
+  font-weight: 700;
 }
 
-
 @media screen and (max-width: 494px) {
-
-    
-.offersList-offers-container > h2 {
+  .offersList-offers-container > h2 {
     font-size: 23px;
     font-weight: 700;
     margin-top: 30px;
-}
-
+  }
 }

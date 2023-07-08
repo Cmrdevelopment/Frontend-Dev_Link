@@ -5,7 +5,9 @@ import { autoLoginUser } from '../services/API_proyect/user.service';
 const useAutoLogin = async (allUser, userlogin) => {
   //! Error 1: en este caso el allUser y el uselogin lo traemos como parametro y no directamente del context
   try {
-    const { password, email } = allUser?.data?.user;
+    //const { password, email } = allUser?.data?.user;
+    const { password, email } = allUser?.data?.user ?? {};
+
     const custoFormData = {
       email,
       password,

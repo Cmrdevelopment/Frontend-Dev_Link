@@ -165,12 +165,12 @@
   padding-top: 20px;
 }
 
-.developerDetails2-city-jobType>h3 {
+.developerDetails2-city-jobType > h3 {
   font-weight: 900;
   font-size: 25px;
 }
 
-.developerDetails2-technologies>h3 {
+.developerDetails2-technologies > h3 {
   font-weight: 900;
   font-size: 25px;
 }
@@ -186,7 +186,7 @@
   border: 0px solid red;
 }
 
-.developerDetails2-info-technologies>h5 {
+.developerDetails2-info-technologies > h5 {
   font-weight: 900;
   font-size: 18px;
 }
@@ -394,12 +394,12 @@
     padding: 0;
   }
 
-  .developerDetails2-technologies>h3 {
+  .developerDetails2-technologies > h3 {
     font-size: 20px;
     margin-top: 12px;
   }
 
-  .developerDetails2-info-technologies>h5 {
+  .developerDetails2-info-technologies > h5 {
     text-align: center;
   }
 
@@ -415,7 +415,7 @@
     width: 100%;
   }
 
-  .developerDetails2-single-experience-container>h3 {
+  .developerDetails2-single-experience-container > h3 {
     font-size: 18px;
     font-weight: 900;
   }

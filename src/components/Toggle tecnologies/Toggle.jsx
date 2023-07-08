@@ -1,13 +1,15 @@
-import { AiOutlineHeart, AiTwotoneHeart } from 'react-icons/ai';
-import { useState, useEffect, useRef } from 'react';
 import './Toggle.css';
-import { toggleFavoriteComment } from '../../services/API_proyect/comment.service';
+
+import { useEffect, useRef, useState } from 'react';
+import { AiOutlineHeart, AiTwotoneHeart } from 'react-icons/ai';
+
 import { useAuth } from '../../contexts/authContext';
-import { updateTecnologia } from '../../services/API_proyect/user.service';
+//import { toggleFavoriteComment } from '../../services/API_proyect/comment.service';
+//import { updateTecnologia } from '../../services/API_proyect/user.service';
 
 const ToggleTech = ({ setArrayTecn, arrayTecn }) => {
-  const [res, setRes] = useState(null);
-  const [loading, setLoading] = useState(false);
+  //const [res, setRes] = useState(null);
+  //const [loading, setLoading] = useState(false);
   const [valuePather, setValuePather] = useState('');
   const [elementId, setElementId] = useState(null);
   const { user } = useAuth();
@@ -43,10 +45,11 @@ const ToggleTech = ({ setArrayTecn, arrayTecn }) => {
   }, []);
 
   return (
-    <button 
+    <button
       style={{ background: 'none', border: 'none' }}
       onClick={handleAddTech}
-      disabled={loading || user == null}
+      //disabled={loading || user == null}
+      disabled={user == null}
       ref={buttonRef}
       className={
         arrayTecn.includes(valuePather) || arrayTecn.includes(elementId)

@@ -17,14 +17,15 @@ const useChangeEmailError = (res, setChangeEmailOK) => {
 
   //! ---------- 200: cuando se ha actualizado todo
   if (contador == 0) {
-    let check = '';
-    res?.data?.testUpdate?.forEach((item) => {
-      for (let clave in item) {
-        if (item[clave] == true) {
-          check += `- ${clave} - `;
-        }
-      }
-    });
+    // let _check = '';
+    // res?.data?.testUpdate?.forEach((item) => {
+    //   for (let clave in item) {
+    //     if (item[clave] == true) {
+    //       _check += `- ${clave} - `;
+    //     }
+    //   }
+    // });
+    // console.log(_check);
     setChangeEmailOK(() => true);
     Swal.fire({
       icon: 'success',

@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { getByReference } from '../../services/API_proyect/comment.service';
+import React, { useEffect } from 'react';
+
 import { useAuth } from '../../contexts/authContext';
 import { getUserById } from '../../services/API_proyect/user.service';
 
 const PrivateComment = () => {
   const { user } = useAuth();
-  const [comments, setComments] = useState([]);
 
   useEffect(() => {
     const fetchComments = async () => {

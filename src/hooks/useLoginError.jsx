@@ -22,7 +22,7 @@ const useLoginError = (res, setLoginOk, userlogin) => {
       email: res.data.user.email,
       image: res.data.user.image,
       check: res.data.user.check,
-      _id: res.data.user._id
+      _id: res.data.user._id,
     };
 
     const dataSting = JSON.stringify(dataCustom);

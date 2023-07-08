@@ -1,8 +1,10 @@
-import { useState, useEffect } from 'react';
-import { AiOutlineHeart, AiTwotoneHeart } from 'react-icons/ai';
 import './Toggle.css';
-import { toggleFavoriteComment } from '../../services/API_proyect/comment.service';
+
+import { useEffect, useState } from 'react';
+import { AiOutlineHeart, AiTwotoneHeart } from 'react-icons/ai';
+
 import { useAuth } from '../../contexts/authContext';
+import { toggleFavoriteComment } from '../../services/API_proyect/comment.service';
 
 const ToggleButton = ({ comment, setAllElementByPather }) => {
   const [res, setRes] = useState(null);

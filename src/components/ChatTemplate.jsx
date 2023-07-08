@@ -1,20 +1,22 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { useAuth } from '../contexts/authContext';
 import './ChatTemplate.css';
+
 import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
+  MDBBtn,
   MDBCard,
   MDBCardBody,
-  MDBIcon,
-  MDBBtn,
-  MDBTypography,
-  MDBTextArea,
   MDBCardHeader,
+  MDBCol,
+  MDBContainer,
+  MDBIcon,
+  MDBRow,
+  MDBTextArea,
+  MDBTypography,
 } from 'mdb-react-ui-kit';
-import { getUserById } from '../services/API_proyect/user.service';
+import React, { useEffect, useState } from 'react';
+
+import { useAuth } from '../contexts/authContext';
 import { createMasChat } from '../services/API_proyect/chat.service';
+import { getUserById } from '../services/API_proyect/user.service';
 
 export const Chat = () => {
   const [resChatUser, setResChatUser] = useState({});
@@ -52,6 +54,10 @@ export const Chat = () => {
       console.error('Error al obtener el usuario:', error);
     }
   };
+
+  useEffect(() => {
+    console.log(send);
+  }, [send]);
 
   useEffect(() => {
     fetchUser();
@@ -104,6 +110,7 @@ export const Chat = () => {
 
               {chats.map((chat) => (
                 <MDBCard
+                  key={chat._id}
                   onClick={() => {
                     localStorage.setItem(
                       'chatCurrent',
@@ -203,7 +210,7 @@ export const Chat = () => {
                               />
                             </li>
                           ) : (
-                            <li class="d-flex justify-content-between mb-4">
+                            <li className="d-flex justify-content-between mb-4">
                               <img
                                 style={{
                                   objectFit: 'cover',
@@ -221,12 +228,12 @@ export const Chat = () => {
                               />
                               <MDBCard className="w-100">
                                 <MDBCardHeader className="d-flex justify-content-between p-3">
-                                  <p class="fw-bold mb-0">
+                                  <p className="fw-bold mb-0">
                                     {user?._id == message?.chat?.userOne?._id
                                       ? message?.chat?.userTwo?.name
                                       : message?.chat?.userOne?.name}
                                   </p>
-                                  <p class="text-muted small mb-0">
+                                  <p className="text-muted small mb-0">
                                     <MDBIcon far icon="clock" /> 13 mins ago
                                   </p>
                                 </MDBCardHeader>

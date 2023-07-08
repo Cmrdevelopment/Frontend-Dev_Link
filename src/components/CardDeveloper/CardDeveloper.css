@@ -3,6 +3,11 @@ h1 {
   margin: 2.5rem;
 }
 
+.developer-card-btn {
+  border: none;
+  background-color: transparent;
+}
+
 .developer-Info {
   display: flex;
   flex-direction: column;
@@ -45,7 +50,6 @@ h1 {
   z-index: 3;
   cursor: pointer;
 }
-
 
 .developer-Info-tabla-name {
   display: flex;

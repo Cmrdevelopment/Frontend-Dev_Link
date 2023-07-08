@@ -1,30 +1,29 @@
 import './DeveloperDetails2.css';
-//import "./OfferDetailsDescription.css"
-//import './OfferDetailsComments.css'
-import { useLocation } from 'react-router-dom';
+
+import { Avatar, Button, Divider, Grid, Paper, TextField, useTheme } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { getUserById } from '../../services/API_proyect/user.service';
-import { useTheme, Divider, Avatar, Grid, Paper, TextField, Button } from '@mui/material';
+import { BiCodeAlt } from 'react-icons/bi';
+import { FaMapMarker } from 'react-icons/fa';
+import { FaLaptopCode } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { MdGroupAdd } from 'react-icons/md';
+import { MdPeople } from 'react-icons/md';
+import { useLocation } from 'react-router-dom';
+import Swal from 'sweetalert2/dist/sweetalert2.all.js';
+
+import Comments from '../../components/Comments/Comments';
+import DeleteCommentComponent from '../../components/DeleteComment/DeleteComment';
+import ReadOnlyDeveloperRating from '../../components/ratings/ReadOnlyUserRating/ReadOnlyUserRating';
+import WriteRatingForDeveloper from '../../components/ratings/WriteRatingForDeveloper/WriteRatingForDeveloper';
+import { useAuth } from '../../contexts/authContext';
+import { technologies } from '../../data/object.tecnologias';
+import { createMasChat } from '../../services/API_proyect/chat.service';
 import {
   createComment,
   getByReference,
 } from '../../services/API_proyect/comment.service';
 import { getByUserExperience } from '../../services/API_proyect/experience.service';
-import Comments from '../../components/Comments/Comments';
-import ReadOnlyDeveloperRating from '../../components/ratings/ReadOnlyUserRating/ReadOnlyUserRating';
-import WriteRatingForDeveloper from '../../components/ratings/WriteRatingForDeveloper/WriteRatingForDeveloper';
-import { FaMapMarker } from 'react-icons/fa';
-import { FaLaptopCode } from 'react-icons/fa';
-import { BiCodeAlt } from 'react-icons/bi';
-import { BsCalendarDay } from 'react-icons/bs';
-import { technologies } from '../../data/object.tecnologias';
-import { MdEmail } from 'react-icons/md';
-import { MdPersonAdd, MdGroupAdd } from 'react-icons/md';
-import { MdPeople, MdPerson } from 'react-icons/md';
-import { createMasChat } from '../../services/API_proyect/chat.service';
-import { useAuth } from '../../contexts/authContext';
-import Swal from 'sweetalert2/dist/sweetalert2.all.js';
-import DeleteCommentComponent from '../../components/DeleteComment/DeleteComment';
+import { getUserById } from '../../services/API_proyect/user.service';
 
 const DeveloperDetails2 = () => {
   const { user } = useAuth();
@@ -440,17 +439,18 @@ const DeveloperDetails2 = () => {
           </Grid>
           <Divider variant="fullWidth" style={{ margin: '30px 0' }} />
           <div className="Dev-comments" style={{ maxHeight: '400px', overflowY: 'auto' }}>
-            {comments != null ?
-              comments.map((singleComment) => (
-                <div className="singlecomment-div" key={singleComment?._id}>
-                  <Comments comment={singleComment} setComentsByChild={setComments} />
-                  <DeleteCommentComponent
-                    className="trash-icon"
-                    commentId={singleComment?._id}
-                    onDelete={handleCommentDelete}
-                  />
-                </div>
-              )) : null}
+            {comments != null
+              ? comments.map((singleComment) => (
+                  <div className="singlecomment-div" key={singleComment?._id}>
+                    <Comments comment={singleComment} setComentsByChild={setComments} />
+                    <DeleteCommentComponent
+                      className="trash-icon"
+                      commentId={singleComment?._id}
+                      onDelete={handleCommentDelete}
+                    />
+                  </div>
+                ))
+              : null}
           </div>
         </Paper>
       </div>

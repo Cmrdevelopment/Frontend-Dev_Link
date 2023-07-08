@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
+import './DevelopersList.css';
+
+import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 
 import { developer_getAll } from '../../services/API_proyect/developer.service';
+import { sortUsersByAverageScore_descendingOrder } from '../../util/filters/developer.filter';
 import CardDeveloper from '../CardDeveloper/CardDeveloper';
-import './DevelopersList.css';
 import { Spinner } from '../Spinner/Spinner';
-import { sortUsersByAverageScore_ascendingOrder, sortUsersByAverageScore_descendingOrder } from '../../util/filters/developer.filter';
 
 const DevelopersList = ({ itemsPerPage }) => {
   const [dataDevelopersList, setDataDevelopersList] = useState([]);
@@ -61,7 +62,7 @@ const DevelopersList = ({ itemsPerPage }) => {
       ) : (
         <div className="developerList-paginate-and-devs-list-container">
           <div className="developersList-developers-container">
-            {itemPerPage.map((developer, index) => (
+            {itemPerPage.map((developer) => (
               <div key={developer._id}>
                 <CardDeveloper developer={developer} />
               </div>

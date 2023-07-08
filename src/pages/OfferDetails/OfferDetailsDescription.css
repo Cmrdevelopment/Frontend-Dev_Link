@@ -1,25 +1,25 @@
 .offerDetails-offer-description h3 {
-    font-size: 23px;
-    font-weight: 900;
-    padding: 9px 0;
+  font-size: 23px;
+  font-weight: 900;
+  padding: 9px 0;
 }
 
 .offerDetails-offer-description {
-    text-align: justify;
-    max-width: 1236px;
-    border: 0.7px solid #e3e4e5;
-    border-radius: 9px;
-    background-color: #fcfcfc;
-    padding: 1.7rem;
+  text-align: justify;
+  max-width: 1236px;
+  border: 0.7px solid #e3e4e5;
+  border-radius: 9px;
+  background-color: #fcfcfc;
+  padding: 1.7rem;
 }
 
 .offerDetails-offer-description h5 {
-    font-size: 18px;
-    margin-top: 16px;
+  font-size: 18px;
+  margin-top: 16px;
 }
 
 @media (max-width: 600px) {
-    .offerDetails-offer-description {
-        height: 100%;
-    }
+  .offerDetails-offer-description {
+    height: 100%;
+  }
 }

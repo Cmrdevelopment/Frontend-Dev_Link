@@ -22,7 +22,7 @@
   font-family: var(--font-bold);
 }
 
-.checkCode-input_user{
+.checkCode-input_user {
   width: 250px;
   border: none;
   border-bottom: 2px solid rgb(180, 180, 180);
@@ -42,8 +42,8 @@
 
 .checkCode-btn-res:hover {
   cursor: pointer;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
-} 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 
 .checkCode-bottom-text {
   text-align: center;
@@ -51,6 +51,6 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
 @media screen and (max-width: 532px) {
   .checkCode-container {
-      width: 87%;
+    width: 87%;
   }
 }

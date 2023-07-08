@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import './offersInterested.css';
+
+import React, { useEffect, useState } from 'react';
+
 import { useAuth } from '../../contexts/authContext';
 import { getUserById } from '../../services/API_proyect/user.service';
-import './offersInterested.css';
 
 const OffersInterested = () => {
   const [offers, setOffers] = useState([]);

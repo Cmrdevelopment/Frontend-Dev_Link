@@ -57,6 +57,7 @@ const Register = () => {
             <img
               className="register-photo"
               src="https://res.cloudinary.com/dhlr7fvd8/image/upload/v1687278019/ProjectFinalBOOTCAMP/Iconos/programacion_cdn0ri.png"
+              alt="Freelance icon"
             />
           </button>
 
@@ -65,6 +66,7 @@ const Register = () => {
             <img
               className="register-photo"
               src="https://res.cloudinary.com/dhlr7fvd8/image/upload/v1687277523/ProjectFinalBOOTCAMP/Iconos/edificio-de-oficinas_1_s9ifty.png"
+              alt="Company icon"
             />
           </button>
         </div>

@@ -1,8 +1,9 @@
-import { Divider, Avatar, Grid, Paper, TextField, Button } from '@mui/material';
+import { Avatar, Divider, Grid } from '@mui/material';
+
 import ToggleButton from '../Toggle/Toggle';
 
 const Comments = ({ comment, setComentsByChild }) => {
-  const { owner, commentContent, likes, createdAt } = comment;
+  const { owner, commentContent, createdAt } = comment;
 
   const creationDate = new Date(createdAt);
   const formattedDate = creationDate.toLocaleString('es-ES', {

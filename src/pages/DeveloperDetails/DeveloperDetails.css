@@ -1,81 +1,80 @@
 .DeveloperDetails-container {
-    display: flex;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .DeveloperDetails-container-one {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    background-color: #FDFCFE;
-    padding: 20px;
-    border: 0.5px solid rgb(180, 180, 180);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  background-color: #fdfcfe;
+  padding: 20px;
+  border: 0.5px solid rgb(180, 180, 180);
 }
 
-.DeveloperDetails-description > p, .DeveloperDetails-description > h3 {
-    text-align: center;
+.DeveloperDetails-description > p,
+.DeveloperDetails-description > h3 {
+  text-align: center;
 }
 
 .DeveloperDetails-container-one:hover {
-    box-shadow: 0 0 3px #25d366;
+  box-shadow: 0 0 3px #25d366;
 }
 
 .DeveloperDetails-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .DeveloperDetails-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.DeveloperDetails-about{
-    text-align: center;
+.DeveloperDetails-about {
+  text-align: center;
 }
 
 .DeveloperDetails-body > div {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .DeveloperDetails-body > div > h3 {
-    font-family: var(--font-bold);
-    border-bottom: 3px solid rgb(180, 180, 180);
-    margin-bottom: 8px;
+  font-family: var(--font-bold);
+  border-bottom: 3px solid rgb(180, 180, 180);
+  margin-bottom: 8px;
 }
 
 .dev-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .DeveloperDetails-description-container-App {
-    text-align: center;
+  text-align: center;
 }
 
 .Dev-comments {
-    align-items: center;
+  align-items: center;
 }
-
 
 @media screen and (max-width: 800px) {
-    .DeveloperDetails-container-one {
-        width: 85%;
-    }
-    .DeveloperDetails-container {
-        padding: 15px;
-    }
+  .DeveloperDetails-container-one {
+    width: 85%;
+  }
+  .DeveloperDetails-container {
+    padding: 15px;
+  }
 }
-

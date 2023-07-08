@@ -1,7 +1,9 @@
+import './Experience.css';
+
 import React, { useState } from 'react';
+
 import CreateExperienceUser from '../createExperience/createExperience';
 import MyExperience from '../myExperience/myExperience';
-import "./Experience.css"
 
 const Experience = () => {
   const [show, setShow] = useState('create');

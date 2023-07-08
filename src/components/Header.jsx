@@ -1,7 +1,9 @@
 import './Header.css';
+
 import { useEffect, useRef, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+
 import { useAuth } from '../contexts/authContext';
 // import { ThemeProvider, useTheme } from "@emotion/react";
 // import GlobalStyles from '../../styles/globalStyles';

@@ -68,64 +68,60 @@ const ChangePassword2 = () => {
         <p className="changePassword-text-new-password">Cambiar Contraseña</p>
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="password_container form-group">
-            <label htmlFor="custom-input" className="custom-placeholder">
-            
-            </label>
+            <label htmlFor="custom-input" className="custom-placeholder"></label>
             <div className="password_container_form-current-new-confirm">
-            <input
-              className="input_user"
-              placeholder='Contraseña actual'
-              type="password"
-              id="password"
-              name="password"
-              autoComplete="false"
-              {...register('password', { required: true })}
-            />
-          
-          <div className="newPassword_container form-group">
-            <label htmlFor="custom-input" className="custom-placeholder">
-              
-            </label>
-            <input
-              className="input_user"
-              placeholder='Nueva contraseña'
-              type="password"
-              id="newPassword"
-              name="newPassword"
-              autoComplete="false"
-              {...register('newPassword', { required: true })}
-            />
-          </div>
-          <div className="confirmPassword_container form-group">
-            <label htmlFor="custom-input" className="custom-placeholder">
-              
-            </label>
-            <input
-              className="input_user"
-              placeholder='confirmar nueva contraseña'
-              type="password"
-              id="confirmPassword"
-              name="confirmPassword"
-              autoComplete="false"
-              {...register('confirmPassword', { required: true })}
-            />
+              <input
+                className="input_user"
+                placeholder="Contraseña actual"
+                type="password"
+                id="password"
+                name="password"
+                autoComplete="false"
+                {...register('password', { required: true })}
+              />
+
+              <div className="newPassword_container form-group">
+                <label htmlFor="custom-input" className="custom-placeholder"></label>
+                <input
+                  className="input_user"
+                  placeholder="Nueva contraseña"
+                  type="password"
+                  id="newPassword"
+                  name="newPassword"
+                  autoComplete="false"
+                  {...register('newPassword', { required: true })}
+                />
+              </div>
+              <div className="confirmPassword_container form-group">
+                <label htmlFor="custom-input" className="custom-placeholder"></label>
+                <input
+                  className="input_user"
+                  placeholder="confirmar nueva contraseña"
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  autoComplete="false"
+                  {...register('confirmPassword', { required: true })}
+                />
+              </div>
             </div>
           </div>
-          </div>
           <div className="btn_container-center-papa">
-          <div className="btn_container">
-            <button
-              className="btn_profile_general"
-              type="submit"
-              disabled={send}
-              //style={{ background: send ? "#49c1a388" : "#49c1a2" }}
-              style={{
-                // background: send ? '#008000' : 'var(--background-color-button-login)',
-              }}
-            >
-              CAMBIAR CONTRASEÑA
-            </button>
-          </div>
+            <div className="btn_container">
+              <button
+                className="btn_profile_general"
+                type="submit"
+                disabled={send}
+                //style={{ background: send ? "#49c1a388" : "#49c1a2" }}
+                style={
+                  {
+                    // background: send ? '#008000' : 'var(--background-color-button-login)',
+                  }
+                }
+              >
+                CAMBIAR CONTRASEÑA
+              </button>
+            </div>
           </div>
         </form>
       </div>

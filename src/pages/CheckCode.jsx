@@ -103,35 +103,40 @@ const CheckCode = () => {
   }
 
   return (
-    
-      <div className="checkCode-container">
-        <h2 className='checkCode-title'>Verifica tu código</h2>
-      
-        <form className='checkCode-form' onSubmit={handleSubmit(formSubmit)}>
+    <div className="checkCode-container">
+      <h2 className="checkCode-title">Verifica tu código</h2>
 
-            <input
-              placeholder='Escribe el código'
-              htmlFor="custom-input"
-              className="checkCode-input_user"
-              type="text"
-              id="name"
-              name="name"
-              autoComplete="false"
-              {...register('confirmationCode', { required: false })}
-            />
+      <form className="checkCode-form" onSubmit={handleSubmit(formSubmit)}>
+        <input
+          placeholder="Escribe el código"
+          htmlFor="custom-input"
+          className="checkCode-input_user"
+          type="text"
+          id="name"
+          name="name"
+          autoComplete="false"
+          {...register('confirmationCode', { required: false })}
+        />
 
-            <button id="btnCheck" className="checkCode-btn-res" type="submit" disabled={send}>Verificar</button>
-        
-         
-            <button id="btnResend" className="checkCode-btn-res" disabled={send} onClick={() => handleReSend()}>Reenviar</button>
-        
-          <p className="checkCode-bottom-text">
-              Si el códifo no es correcto tu usuario será borrado y tendras que registrarte de nuevo.{' '}
-          </p>
+        <button id="btnCheck" className="checkCode-btn-res" type="submit" disabled={send}>
+          Verificar
+        </button>
 
-        </form>
-      </div>
-    
+        <button
+          id="btnResend"
+          className="checkCode-btn-res"
+          disabled={send}
+          onClick={() => handleReSend()}
+        >
+          Reenviar
+        </button>
+
+        <p className="checkCode-bottom-text">
+          Si el códifo no es correcto tu usuario será borrado y tendras que registrarte de
+          nuevo.{' '}
+        </p>
+      </form>
+    </div>
   );
 };
 

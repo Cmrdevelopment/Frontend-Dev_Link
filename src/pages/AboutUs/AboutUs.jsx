@@ -1,5 +1,6 @@
-import React from 'react';
 import './AboutUs.css';
+
+import React from 'react';
 import { AiFillGithub, AiFillTwitterCircle, AiFillYoutube } from 'react-icons/ai';
 import { BsFacebook } from 'react-icons/bs';
 
@@ -38,25 +39,45 @@ const AboutUs = () => {
 
               <ul className="team-icon">
                 <li>
-                  <a href="#" className="gitHub">
+                  <a
+                    href="https://github.com/Cmrdevelopment"
+                    className="gitHub"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillGithub size={38} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="youTube">
+                  <a
+                    href="https://www.youtube.com/@neoland-school"
+                    className="youTube"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillYoutube size={44} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="twitter">
+                  <a
+                    href="https://twitter.com/NeolandStudio"
+                    className="twitter"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillTwitterCircle size={40} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="facebook">
+                  <a
+                    href="https://www.facebook.com/NeolandStudio/?locale=es_ES"
+                    className="facebook"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <BsFacebook size={33} />
                   </a>
                 </li>
@@ -86,25 +107,45 @@ const AboutUs = () => {
 
               <ul className="team-icon">
                 <li>
-                  <a href="#" className="gitHub">
+                  <a
+                    href="https://github.com/aaitorgutierrez"
+                    className="gitHub"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillGithub size={38} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="youTube">
+                  <a
+                    href="https://www.youtube.com/@neoland-school"
+                    className="youTube"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillYoutube size={44} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="twitter">
+                  <a
+                    href="https://twitter.com/NeolandStudio"
+                    className="twitter"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillTwitterCircle size={40} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="facebook">
+                  <a
+                    href="https://www.facebook.com/NeolandStudio/?locale=es_ES"
+                    className="facebook"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <BsFacebook size={33} />
                   </a>
                 </li>
@@ -134,25 +175,45 @@ const AboutUs = () => {
 
               <ul className="team-icon">
                 <li>
-                  <a href="#" className="gitHub">
+                  <a
+                    href="https://github.com/ozillo"
+                    className="gitHub"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillGithub size={38} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="youTube">
+                  <a
+                    href="https://www.youtube.com/@neoland-school"
+                    className="youTube"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillYoutube size={44} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="twitter">
+                  <a
+                    href="https://twitter.com/NeolandStudio"
+                    className="twitter"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillTwitterCircle size={40} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="facebook">
+                  <a
+                    href="https://www.facebook.com/NeolandStudio/?locale=es_ES"
+                    className="facebook"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <BsFacebook size={33} />
                   </a>
                 </li>
@@ -179,25 +240,45 @@ const AboutUs = () => {
 
               <ul className="team-icon">
                 <li>
-                  <a href="#" className="gitHub">
+                  <a
+                    href="https://github.com/Alejandro-Manzano"
+                    className="gitHub"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillGithub size={38} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="youTube">
+                  <a
+                    href="https://www.youtube.com/@neoland-school"
+                    className="youTube"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillYoutube size={44} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="twitter">
+                  <a
+                    href="https://twitter.com/NeolandStudio"
+                    className="twitter"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillTwitterCircle size={40} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="facebook">
+                  <a
+                    href="https://www.facebook.com/NeolandStudio/?locale=es_ES"
+                    className="facebook"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <BsFacebook size={33} />
                   </a>
                 </li>
@@ -228,25 +309,45 @@ const AboutUs = () => {
 
               <ul className="team-icon">
                 <li>
-                  <a href="#" className="gitHub">
+                  <a
+                    href="https://github.com/IgorLuzarraga"
+                    className="gitHub"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillGithub size={38} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="youTube">
+                  <a
+                    href="https://www.youtube.com/@neoland-school"
+                    className="youTube"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillYoutube size={44} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="twitter">
+                  <a
+                    href="https://twitter.com/NeolandStudio"
+                    className="twitter"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillTwitterCircle size={40} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="facebook">
+                  <a
+                    href="https://www.facebook.com/NeolandStudio/?locale=es_ES"
+                    className="facebook"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <BsFacebook size={33} />
                   </a>
                 </li>
@@ -276,25 +377,45 @@ const AboutUs = () => {
 
               <ul className="team-icon">
                 <li>
-                  <a href="#" className="gitHub">
+                  <a
+                    href="https://github.com/jonathanrodvaz"
+                    className="gitHub"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillGithub size={38} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="youTube">
+                  <a
+                    href="https://www.youtube.com/@neoland-school"
+                    className="youTube"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillYoutube size={44} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="twitter">
+                  <a
+                    href="https://twitter.com/NeolandStudio"
+                    className="twitter"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillTwitterCircle size={40} />
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="facebook">
+                  <a
+                    href="https://www.facebook.com/NeolandStudio/?locale=es_ES"
+                    className="facebook"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <BsFacebook size={33} />
                   </a>
                 </li>

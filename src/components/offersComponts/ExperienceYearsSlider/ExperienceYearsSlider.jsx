@@ -1,9 +1,8 @@
+import './ExperienceYearsSlider.css';
+
 import { Slider } from '@mui/material';
-import './ExperienceYearsSlider.css'
 
 const marks = [
-
-
   { value: 1, label: '1' },
   { value: 2, label: '2' },
   { value: 3, label: '3' },
@@ -13,10 +12,9 @@ const marks = [
   { value: 8, label: '8' },
   { value: 9, label: '9' },
   { value: 10, label: '10' },
-
 ];
 
-const ExperienceYearsSlider = ({ value, onChange }) =>
+const ExperienceYearsSlider = ({ value, onChange }) => (
   <Slider
     aria-label="Custom marks"
     value={value}
@@ -26,6 +24,6 @@ const ExperienceYearsSlider = ({ value, onChange }) =>
     max={10}
     marks={marks}
   />
+);
 
-export default ExperienceYearsSlider
-
+export default ExperienceYearsSlider;

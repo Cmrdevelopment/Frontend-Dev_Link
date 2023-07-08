@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { useAuth } from '../../contexts/authContext';
-import { getUserById } from '../../services/API_proyect/user.service';
 import './offersCreated.css';
+
+import React, { useEffect, useState } from 'react';
+
+import { useAuth } from '../../contexts/authContext';
 import { updateOffer } from '../../services/API_proyect/offer.service';
+import { getUserById } from '../../services/API_proyect/user.service';
 import DeleteOfferButton from '../DeleteOffer/DeleteOffer';
 
 const OffersCreated = () => {
@@ -71,12 +73,7 @@ const OffersCreated = () => {
                 </select>
               </p>
               <p>Tecnologías: {offer.technologies.join(', ')}</p>
-              <DeleteOfferButton
-                  id={offer._id}
-                  offers={offers}
-                  setOffers={setOffers}
-                />
-            
+              <DeleteOfferButton id={offer._id} offers={offers} setOffers={setOffers} />
             </li>
           ))}
         </ul>
