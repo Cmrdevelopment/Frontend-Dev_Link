@@ -1,4 +1,4 @@
-import './deleteOffer.css';
+
 
 import React from 'react';
 
