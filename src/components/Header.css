@@ -219,9 +219,9 @@ nav {
 
   header .navHeader {
     position: fixed;
-    top: -160vh;
+    top: -120vh;
     left: 0;
-    height: 880px;
+    height: 500px;
     width: 390px;
     display: flex;
     flex-direction: column;
